@@ -19,3 +19,7 @@ func (m *MediaInfo) String() string {
 		"creationTime:%v\nmodifTime:%v\nduration:%v\nwidth:%.2f\theight:%.2f\tsound samlping rate:%dHz",
 		m.creationTime, m.modifTime, m.duration, m.width, m.height, m.soundSamplingRate)
 }
+
+func (m *MediaInfo) GetDuration() *time.Duration {
+	return m.duration
+}
